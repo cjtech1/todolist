@@ -9,7 +9,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
  
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("/Public"));
+app.use(express.static("Public"));
 mongoose.connect( "mongodb+srv://midestffin:WKLH896xMTpvkwTH@cluster0.hutu7d8.mongodb.net/todolistDB");
 
 const itemsSchema = new mongoose.Schema({  
